@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ecommerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Online Shopping</h1>
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here...."
+        />
+        <button id="search">Search</button>
+      </div>
+    </div>
+    <div id="buttons">
+      <button class="button-value" onclick="filterProduct('all')">All</button>
+      <button class="button-value" onclick="filterProduct('Dress')">
+        Dress
+      </button>
+      <button class="button-value" onclick="filterProduct('Groceries')">
+        Groceries
+      </button>
+      <button class="button-value" onclick="filterProduct('Fruits')">
+        Fruits
+      </button>
+      <button class="button-value" onclick="filterProduct('Electronics')">
+        Electronics
+      </button>
+    </div>
+    <div id="Products"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
